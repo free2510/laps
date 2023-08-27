@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="form_save.php" method="post">
+      <div class="title"><h2>form EG</h2></div>
+      <div class="main-cont">
+        <div class="cont">
+          <label>first name</label>
+          <input type="text" name="first_name" />
+        </div>
+        <div class="cont">
+          <label>last name</label>
+          <input type="text" name="last_name" />
+        </div>
+        <div class="cont">
+          <label>password</label>
+          <input type="password" name="password" />
+        </div>
+        <div class="cont">
+          <label>username</label>
+          <input type="text" name="username" />
+        </div>
+        <div class="cont">
+          <label>email</label>
+          <input type="email" name="email" />
+        </div>
+        <div class="cont">
+          <label>department</label>
+          <input type="text" name="department" />
+        </div>
+      </div>
+      <div class="side-cont">
+        <div class="cont">
+          <label>address</label>
+          <textarea
+            name="address"
+            cols="35"
+            rows="8"
+            placeholder="put your address"
+          ></textarea>
+        </div>
+        <div class="cont">
+          <label>country</label>
+          <select name="country">
+            <option value="egy">egypt</option>
+            <option value="soudia">soudia</option>
+          </select>
+        </div>
+      </div>
+      <div class="control">
+        <button name="submit" type="submit">submit</button>
+        <button type="reset">reset</button>
+      </div>
+    </form>
+  </body>
+</html>

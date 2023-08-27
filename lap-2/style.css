@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  font-size: 0.8em;
+  background-image: url(/7270362.webp);
+}
+body .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    font-size: 1.4em;
+    text-transform: capitalize;
+}
+body form {
+  flex-wrap: wrap;
+  display: flex;
+  font-size: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.69);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.1px);
+-webkit-backdrop-filter: blur(1.1px);
+border: 1px solid rgba(255, 255, 255, 0.43);
+}
+.main-cont {
+  flex-wrap: wrap;
+  display: flex;
+  float: left;
+  width: 70%;
+}
+body form .cont {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+body form .cont label,
+input,
+textarea {
+  padding: 5px 0 5px 10px;
+  margin: 3px;
+}
+body form .cont label,
+input,
+textarea::placeholder {
+  background-color: transparent;
+}
+body form .cont label {
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+body form input,
+textarea,
+select {
+  border: solid 1px;
+  border-radius: 10px;
+}
+body form input,
+textarea,
+select ::placeholder {
+  background-color: transparent;
+}
+.side-cont {
+  display: flex;
+  float: right;
+  width: 30%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-around;
+}
+.side-cont .cont textarea::placeholder{
+  color: black;
+}
+.side-cont select {
+  height: 2em;
+  font-size: 1.2em;
+  background-color: transparent;
+}
+
+form .control {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+form .control button {
+  margin: 20px;
+  padding: 10px;
+  font-size: 1.5em;
+}
+form .control button:nth-child(1) {
+  background-color: rgb(0, 0, 255, 0.6);
+  color: white;
+}
+
+form .control button:nth-child(2) {
+  background-color: rgb(255, 0, 0, 0.6);
+  color: white;
+}
+form .control button:nth-child(1):hover {
+  background-color: blue;
+  transition: 0.5s;
+}
+form .control button:nth-child(2):hover {
+  background-color: red;
+  transition: 0.5s;
+}
